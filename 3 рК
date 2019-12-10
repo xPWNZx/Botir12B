@@ -1,0 +1,23 @@
+ create table gorod (
+ id int not null auto_increment,
+  city char(24),
+  country int char(24),
+  population int default null,
+  year int default null,
+  primary key (id)
+) engine = myisam default character set = cp1251;
+ 
+insert into gorod (city, country, population,year) values
+  ("Москва" , "Россия",10000000, 1706),
+  ("Йошкар-Ола", "Манголия", 300000, 504),
+  ("Казань", "Россия", 1000002, 1600)
+  ("Нижний Новгород","Россия", 456454, 1800),
+  ("Канаш", "Булунгур", 45454545,1590
+  ("Новочебоксарск", "Иордания", 45454545, 1709),
+  Задание 3
+  select g.city_name
+from gorod g where g.city_name like 'М%';
+delete from gorod where 500000<naselenie<10000000;
+select * from gorod;
+Задание2
+mysql> SELECT * FROM students WHERE population>1000000
